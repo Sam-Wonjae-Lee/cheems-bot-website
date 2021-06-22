@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+p{
+  font-weight: 300;
+  color: white; 
+}
+
+.banner{
+  background-color: #282b30;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content
+{
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h2
+{
+  font-size: 5em;
+  color: #AC8576;
+}
+
+.banner .content h3
+{
+  font-size: 3em;
+  color: #C5BAC2;
+}
+
+.banner .content p
+{
+  font-size: 1em;
+  color: #fff;
+}
+.btn
+{
+  font-size: 1em;
+  color: #fff;
+  background: #738ADB;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover
+{
+  letter-spacing: 6px;
+}
+
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky
+{
+  background:#282b30;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+}
+
+header.sticky .logo
+{
+  color: #AC8576;
+}
+
+header .logo
+{
+  color: #AC8576;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header .logo span
+{
+  color: #C5BAC2;
+
+}
+
+header .navigation
+{
+  position: relative;
+  display: flex;
+}
+
+header .navigation li
+{
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+header.sticky .navigation li a
+{
+  color: #fff;
+}
+
+header .navigation li a:hover
+{
+  color:#AC8576
+}
+
+section{
+  background-color:#282b30;
+  padding: 100px;
+}
+
+.titleText
+{
+  color: #C5BAC2;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.titleText span
+{
+  color: #AC8576;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 20px;
+  color: #fff;
+}
+
+h3 strong{
+  color: #AC8576;
+}
+
+strong{
+  color: #AC8576;
+}
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label{
+  color: #AC8576
+}
+
+.bottomtext{
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #282b30
+
+}
+
+@media (max-width: 991px){
+
+  header, header.sticky
+  {
+    padding: 10px 20px;
+  }
+header .navigation
+{
+  display: none;
+}
+
+header .navigation.active
+{
+  width: 100%;
+  height: calc(100% -68px);
+  position: fixed;
+  top: 68px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #282b30
+}
+
+header .navigation li
+{
+  margin-left: 0;
+}
+
+header .navigation li a
+{
+  color: #fff;
+  font-size: 1.6em;
+}
+
+.menuToggle
+{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url(menu.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.menuToggle.active{
+  background: url(close.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section 
+{
+  padding: 20px;
+}
+.banner .content h2 
+{
+  font-size: 3em;
+  color: #AC8576
+}
+
+
+}
+
